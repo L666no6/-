@@ -1,9 +1,9 @@
-//ÏîÄ¿Ãû:
-//±àºÅ:ÃÜÂë¹æÔòIII ¶şºÍÒ»×îÖÕ³ÌĞò 
+//é¡¹ç›®å:
+//ç¼–å·:å¯†ç è§„åˆ™III äºŒå’Œä¸€æœ€ç»ˆç¨‹åº 
 /*
  Special
 */
-//ÖÆ×÷ÈË:ÁÖêÑ²©
+//åˆ¶ä½œäºº:æ—æš„åš
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -21,14 +21,14 @@ void out(string s,T ans){
 //-------------------------------LtoN-----------------------------------------------
 
 //From <TRY-A>
-//						 AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+//			 AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
 const string rules_08="000102030405060710111213141516172021222324252627303132";
 const string rules_10="000102030405060708091011121314151617181920212223242526";
 const string rules_16="001A191817161514131211100F0E0D0C0B0A090807060504030201";
 
 string answer="";
 
-bool yih(bool a,bool b)//Òì»ò
+bool yih(bool a,bool b)//å¼‚æˆ–
 {
 	if (a==0 && b==1) return 1;
 	if (a==1 && b==0) return 0;
@@ -146,7 +146,7 @@ string Chage1(int rule)
 string input_C;
 
 bool read(int go,int& start,int& end,const char& a,const char& b)//ready!
-//Ê¶±ğ ()[]{},but no twins
+//è¯†åˆ« ()[]{},but no twins
 {
 	int len=input_C.length();
 //										out("read get the length of string from input",len);
@@ -354,7 +354,7 @@ string zidong(string input)
 //-------------------------------NtoL-----------------------------------------------
 //-------------------------------NtoL-----------------------------------------------
 
-//º¯ÊıÉùÃ÷ 
+//å‡½æ•°å£°æ˜ 
 void wait(int ms);
 void load();
 void newuser ();
@@ -363,7 +363,7 @@ char chage(char s[3],int rule);
 void choose(const int& go,char result[3]);
 bool same (string a,string b);
 string NtoL(string input);
-//º¯ÊıÉùÃ÷ 
+//å‡½æ•°å£°æ˜ 
 
 //From TRY-D,E
 
@@ -546,7 +546,7 @@ void load()
 	X.level="special";
 	X.number_of_level=3;
 	
-	ifstream in("Users imformation.txt");
+	ifstream in("Users information.txt");
  	in>>number_of_user;
 	
 	for (int i=0;i<number_of_user;i++)
@@ -593,7 +593,7 @@ void newuser ()
 	if (order==ORDER1)
 		np.level="GirlFriend";
 		np.number_of_level=2;
-	ofstream out("Users imformation.txt");
+	ofstream out("Users information.txt");
 	out<<number_of_user+1<<endl;
 	for (int i=0;i<number_of_user;i++)
 	{
